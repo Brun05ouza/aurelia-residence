@@ -1,0 +1,35 @@
+---
+import '@fontsource-variable/manrope';
+import Hero from '../components/Hero';
+import Project from '../components/Project';
+import Developments from '../components/Developments';
+import ResidenceQuestions from '../components/ResidenceQuestions';
+import { getImage } from 'astro:assets';
+import house from '../assets/modern-house.png';
+import '../styles/global.css';
+import '../styles/project.css';
+import '../styles/developments.css';
+import '../styles/residence-questions.css';
+const projectHouse = await getImage({ src: house, width: 1600, format: 'webp', quality: 85 });
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#103858" />
+    <meta name="description" content="Aurelia Residence. Arquitetura contemporânea, conforto e conexão com a natureza. Um novo olhar para o seu jeito de viver." />
+    <link rel="icon" type="image/svg+xml" href="/images/aurelia-residence-simbolo.svg" />
+    <link rel="preload" as="image" href="/images/aurelia-residence-predio-recorte.jpg" />
+    <title>Aurelia Residence — Where life belongs</title>
+  </head>
+  <body>
+    <main>
+      <Hero client:load />
+      <Project client:visible={{ rootMargin: '300px' }} imageSrc={projectHouse.src} imageWidth={Number(projectHouse.attributes.width)} imageHeight={Number(projectHouse.attributes.height)} />
+      <Developments client:visible={{ rootMargin: '300px' }} />
+      <ResidenceQuestions client:visible={{ rootMargin: '300px' }} />
+    </main>
+  </body>
+</html>

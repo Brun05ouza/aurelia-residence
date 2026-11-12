@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="510" height="100" viewBox="0 0 510 100" role="img" aria-label="Aurelia Residence">
+  <g style="color:#FFFFFF"><path d="M16 65V39C16 23 28 12 43 12C58 12 70 23 70 39V65" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+<path d="M29 65V40C29 32 35 26 43 26C51 26 57 32 57 40V65" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+<path d="M7 65L29 45" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" fill="none"/></g>
+  <path d="M99 18 V82" stroke="#FFFFFF" stroke-opacity=".72" stroke-width="1" />
+  <text x="126" y="47" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" letter-spacing="5">AURELIA</text>
+  <text x="126" y="73" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" letter-spacing="6.3">RESIDENCE</text>
+</svg>
